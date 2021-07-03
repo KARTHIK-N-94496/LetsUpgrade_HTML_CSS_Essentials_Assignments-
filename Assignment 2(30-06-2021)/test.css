@@ -1,0 +1,13 @@
+.div_tag
+{
+    background-color: gray;
+    width: 50%;
+    height: 100vh;
+}
+
+.p_external_tag
+{
+    color: greenyellow;
+    background-color: steelblue;
+    font-size: 40px;
+}
