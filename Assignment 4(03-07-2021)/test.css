@@ -1,0 +1,221 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS for header */
+.header_section
+{
+    /* background-color: #0771aa; */
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;   /* Make the header to stay at the fixed position*/
+}
+
+.container  /*Two classes because we use container for many other but not the properties of header_container*/
+{
+    width: 80%;
+    /* height: 70px; */
+    /* background-color: #e20000; */
+    display: flex;
+}
+
+.header_container
+{
+    justify-content: space-between;
+}
+
+.logo
+{
+    width: 20%;
+    height: 70px;
+    /* background-color: #d8d51e; */
+    color: white;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    line-height: 70px;  /*To the text come to center on the height*/
+}
+
+.nav
+{
+    height: 70px;
+    width: 35%;
+    /* background-color: green; */
+    display: flex;
+}
+
+.nav-item
+{
+    width: 20%;
+    height: 70px;
+    /* background-color: gray; */
+    /* font-size: 18px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;    /*To get an hand symbol on going on texts*/
+    transition: 0.75s;
+}
+
+/*Changing the color of text when cursor went on text - For Home,About,Services,Portfolio,Contact*/
+/*This can be done using hover for that class*/
+.nav-item:hover /*This is also called psuedo-class(Class which was already present and we make use of that)*/
+{
+    background-color: white;
+    color: #0771aa;
+}
+
+
+/*CSS for Banner*/
+.banner
+{
+    height: 680px;
+    width: 100%;
+    background-color: gray;
+    background-image: url('Images/banner.jpg');
+    background-size: cover; /*To automatically adjust the background image*/
+}
+
+.overlay
+{
+    height: 680px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5); /*a - alpha: To give transparenct and value lies between 0 and 1*/
+    display: flex;
+    align-items: center;
+}
+
+.banner_text
+{
+    height: 350px;
+    width: 50%;
+    background-color: rgba(7,113,170,0.7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.padd
+{
+    padding: 20px;
+    text-align: center;
+}
+
+.banner_title
+{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.banner_btn
+{
+    margin-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px solid white;
+    cursor: pointer;
+    transition: 2s; /*Time to make the changes over hover*/
+}
+
+.banner_btn:hover
+{
+    background-color: white;
+    color: #0771aa;
+}
+
+
+/* CSS for Services */
+.services
+{
+    /* No height given because to make it grow based on children */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #e7e3e3f6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.services_container
+{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.service
+{
+    height: 400px;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    margin: 20px;
+}
+
+.service_img
+{
+    width: 40%;
+    height: 400px;
+    /* background-color: red; */
+    display: flex;
+    overflow: hidden; /*To hide the overflown image(came out of layout)*/
+}
+
+.service_details
+{
+    width: 60%;
+    height: 400px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+}
+
+.service_padd
+{
+    padding: 20px;
+}
+
+.service_btn
+{
+    margin-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    background-color: rgba(7,113,170,1);
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.service_title
+{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.service_desc
+{
+    margin-bottom: 30px;
+    text-align: left;
+}
