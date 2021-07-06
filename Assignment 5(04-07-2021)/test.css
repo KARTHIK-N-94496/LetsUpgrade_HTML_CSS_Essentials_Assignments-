@@ -1,0 +1,537 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS for header */
+.header_section
+{
+    /* background-color: #0771aa; */
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;   /* Make the header to stay at the fixed position*/
+}
+
+.container  /*Two classes because we use container for many other but not the properties of header_container*/
+{
+    width: 80%;
+    /* height: 70px; */
+    /* background-color: #e20000; */
+    display: flex;
+}
+
+.header_container
+{
+    justify-content: space-between;
+}
+
+.logo
+{
+    width: 20%;
+    height: 70px;
+    /* background-color: #d8d51e; */
+    color: white;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    line-height: 70px;  /*To the text come to center on the height*/
+}
+
+.nav
+{
+    height: 70px;
+    width: 35%;
+    /* background-color: green; */
+    display: flex;
+}
+
+.nav-item
+{
+    width: 20%;
+    height: 70px;
+    /* background-color: gray; */
+    /* font-size: 18px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;    /*To get an hand symbol on going on texts*/
+    transition: 0.75s;
+}
+
+/*Changing the color of text when cursor went on text - For Home,About,Services,Portfolio,Contact*/
+/*This can be done using hover for that class*/
+.nav-item:hover /*This is also called psuedo-class(Class which was already present and we make use of that)*/
+{
+    background-color: white;
+    color: #0771aa;
+}
+
+
+/*CSS for Banner*/
+.banner
+{
+    height: 680px;
+    width: 100%;
+    background-color: gray;
+    background-image: url('Images/banner.jpg');
+    background-size: cover; /*To automatically adjust the background image*/
+}
+
+.overlay
+{
+    height: 680px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5); /*a - alpha: To give transparenct and value lies between 0 and 1*/
+    display: flex;
+    align-items: center;
+}
+
+.banner_text
+{
+    height: 350px;
+    width: 50%;
+    background-color: rgba(7,113,170,0.7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.padd
+{
+    padding: 20px;
+    text-align: center;
+}
+
+.banner_title
+{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.banner_btn
+{
+    margin-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px solid white;
+    cursor: pointer;
+    transition: 2s; /*Time to make the changes over hover*/
+}
+
+.banner_btn:hover
+{
+    background-color: white;
+    color: #0771aa;
+}
+
+
+/* CSS for Services */
+.services
+{
+    /* No height given because to make it grow based on children */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #e7e3e3f6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.services_container
+{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.service
+{
+    height: 400px;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    margin: 20px;
+}
+
+.service_img
+{
+    width: 40%;
+    height: 400px;
+    /* background-color: red; */
+    display: flex;
+    overflow: hidden; /*To hide the overflown image(came out of layout)*/
+}
+
+.service_details
+{
+    width: 60%;
+    height: 400px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+}
+
+.service_padd
+{
+    padding: 20px;
+}
+
+.service_btn
+{
+    margin-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    background-color: rgba(7,113,170,1);
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.service_title
+{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.service_desc
+{
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+
+/* CSS for About */
+.about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+.about_container
+{
+    margin-top: 30px;
+    display: inline;
+    line-height: 30px;
+}
+
+.start_text
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: gray;
+}
+
+
+/* CSS for Highlights */
+.highlights
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: rgba(7,113,170,1);
+    display: flex;
+    justify-content: center;
+}
+
+.high_ele
+{
+    width: 25%;
+    height: 150px;
+    /* background-color: red; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.high_title
+{
+    font-size: 60px;
+}
+
+.high_desc
+{
+    font-size: 25px;
+}
+
+.highlights_container
+{
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* CSS for Quotes */
+.quote
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quote_container
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote_title
+{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.quote_btn
+{
+    margin-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    background-color: rgba(7,113,170,1);
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.quote_btn:hover
+{
+    background-color: white;
+    color: #0771aa;
+    font-size: 30px;
+}
+
+
+/* CSS for Portfolio */
+.portfolio
+{
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e3e3f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portfolio_container
+{
+    flex-wrap: wrap;    /*To get the next element down if the width if completed*/
+    margin-top: 30px;
+    width: 100%; /*Make the container to cover full width*/
+}
+
+.project
+{
+    width: 25%;
+    height: 250px;
+    background-color: red;
+    display: flex;
+    overflow: hidden;   /*If there is any overflow of elements in layout we can hide that using this property*/
+}
+
+.project_title
+{
+    color: white;
+    width: 100%;
+    height: 125px;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 150px;
+    background-color: rgba(7,113,170,0.5);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.project_title:hover
+{
+    height: 250px;
+}
+
+.project_1
+{
+    background-image: url('https://images.pexels.com/photos/3184463/pexels-photo-3184463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+}
+
+.project_2
+{
+    background-image: url('https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    align-items: flex-end;  /*This makes the project title to go down*/
+}
+
+.project_3
+{
+    background-image: url('https://images.pexels.com/photos/256219/pexels-photo-256219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+}
+
+.project_4
+{
+    background-image: url('https://images.pexels.com/photos/586098/pexels-photo-586098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');    
+    background-size: cover;
+    align-items: flex-end;
+}
+
+.project_5
+{
+    background-image: url('https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');    
+    background-size: cover;
+}
+
+.project_6
+{
+    background-image: url('https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    align-items: flex-end;
+}
+
+.project_7
+{
+    background-image: url('https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+}
+
+.project_8
+{
+    background-image: url('https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    align-items: flex-end;
+}
+
+
+/* CSS for Footer */
+.footer
+{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_child
+{
+    height: 200px;
+    width: 25%;
+    /* background-color: gray; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_child_1
+{
+    color: white;
+    font-size: 25px;
+    align-items: center;
+}
+
+ul
+{
+    margin-top: 40px;
+}
+
+li
+{
+    list-style-type: none;  /*To remove the bullets in list*/
+    margin-bottom: 10px;
+    color: white;
+}
+
+.first
+{
+    font-size: 22px;
+}
+
+.footer_child_4
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_container
+{
+    width: 75%;
+    justify-content: space-between;
+}
+
+.social_icon
+{
+    height: 40px;
+    width: 40px;
+    /* background-color: white; */
+    cursor: pointer;
+}
+
+.si1
+{
+    background-image: url('./Icons/google.png');
+    background-size: cover;
+}
+
+.si2
+{
+    background-image: url('./Icons/twitter.png');
+    background-size: cover;
+}
+
+.si3
+{
+    background-image: url('./Icons/facebook.png');
+    background-size: cover;
+}
+
+.si4
+{
+    background-image: url('./Icons/instagram.png');
+    background-size: cover;
+}
+
+.si5
+{
+    background-image: url('./Icons/linkedin.png');
+    background-size: cover;
+}
